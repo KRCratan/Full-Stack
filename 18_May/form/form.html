@@ -5,19 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Form</title>
+    <style>
+      body{
+        background-color: aqua;
+      }
+      form{
+        background-color: antiquewhite;
+        padding: 50px;
+      }
+      input{
+        height: 40px;
+        width: 200px;
+        border-radius: 10px;
+      
+      }
+      .button{
+        background-color: greenyellow;
+        height: 40px;
+        color: rgb(220, 41, 122);
+        text-transform: uppercase;
+        font-size: large;
+
+      }
+
+    </style>
 </head>
 <body>
-    <form action="">
-     <label for="name">Name:</label>   
-    <input type="text" placeholder="Enter your username" id="name">
-      <br>
-    <label for="pass">Password: </label>
+  
+    <form>
+    <h1>STUDENT REGISTRATION FORM</h1>
+    <label for="name">Username</label>   
+    <input type="text" placeholder="Enter your username" id="name" required>
+    <br><br>
+    <label for="pass">Password</label>
     <input type="password" placeholder="Enter your password" id="pass">
-    <br>
-    <label for="email" >Email: </label>
+    <br><br>
+    <label for="email" >Email</label>
     <input type="email" placeholder="Enter your email" id="email">
     <br><br>    
-    <input type="submit" value="submit">
+    <label for="color">Enter your color value</label>
+    <input type="color" id="color">
+    <br><br>
+    <label for="date">Enter your DOB</label>
+    <input type="date" id="date" max="2023-05-16" min="2000-05-16"  >
+    <br><br>
+    <label for="datetime">Enter your local Date and time</label>
+    <input type="datetime-local" id="datetime">
+    <br><br>
+    <label for="resume">Upload your resume</label>
+    <input type="file" id="resume" multiple>
+    <br><br>
+    <input type="hidden" value="312" id="student_id">
+     <br>
+    <label for="month">Enter month</label>
+    <input type="month" id="month">
+    <br><br>
+    <label for="number">Enter contact number</label>
+    <input type="number" id="number" max="10" min="10">
+   
+    <br><br>
+    <label for="website">Enter your Github url</label>
+    <input type="url" id="website">
+    <br><br>
+    
+    <!-- <input type="range"> -->
+    <input type="reset" class="button">
+    <!-- <input type="image" class="button" src="/18_May/image/submit-button-png-25803.png" width="100px">   Submit button as image -->
+    <input type="submit" value="submit" class="button">
     
 
 
